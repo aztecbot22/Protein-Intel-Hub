@@ -110,3 +110,9 @@ Each adapter lives in `backend/app/services/adapters/`.
 
 ## Notes
 This scaffold focuses on clear data contracts, adapter boundaries, and a strong UX foundation. You can extend the adapters for deeper evidence and scoring.
+
+
+
+
+<img width="1330" height="676" alt="image" src="https://github.com/user-attachments/assets/88ec5b28-4c41-4801-9127-7e96d61cbd6e" />
+
