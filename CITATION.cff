@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Protein Intelligence Hub"
+version: "0.1.0"
+date-released: "2026-02-05"
+type: software
+authors:
+  - family-names: "Pathak"
+    given-names: "Priyansh"
+repository-code: "https://github.com/<your-username>/protein-intelligence-hub"
+url: "https://github.com/<your-username>/protein-intelligence-hub"
+license: "MIT"

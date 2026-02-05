@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# Node
+node_modules/
+
+# Build
+frontend/dist/
+backend/.pytest_cache/
+
+# Database
+*.db
+
+# OS
+.DS_Store

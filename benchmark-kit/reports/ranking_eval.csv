@@ -1,0 +1,17 @@
+gene,disease,hit
+FTL,neurodegeneration,0
+FTH1,iron overload,0
+TP53,cancer,1
+BRCA1,breast cancer,0
+BRCA2,breast cancer,1
+APP,alzheimer,1
+SNCA,parkinson,0
+LRRK2,parkinson,0
+CFTR,cystic fibrosis,0
+HBB,sickle cell,0
+G6PD,hemolytic anemia,0
+APOE,alzheimer,0
+EGFR,lung cancer,1
+KRAS,pancreatic cancer,0
+BRAF,melanoma,0
+PTEN,hamartoma,1

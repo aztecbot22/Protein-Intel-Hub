@@ -1,0 +1,2 @@
+duration_s,total_requests,failure_count,success_rate_pct,rps,p50_ms,p95_ms
+123.99,1349,150,88.88,10.88,1170.68,4786.57

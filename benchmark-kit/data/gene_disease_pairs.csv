@@ -1,0 +1,17 @@
+gene,disease,organism_taxon_id
+FTL,neurodegeneration,9606
+FTH1,iron overload,9606
+TP53,cancer,9606
+BRCA1,breast cancer,9606
+BRCA2,breast cancer,9606
+APP,alzheimer,9606
+SNCA,parkinson,9606
+LRRK2,parkinson,9606
+CFTR,cystic fibrosis,9606
+HBB,sickle cell,9606
+G6PD,hemolytic anemia,9606
+APOE,alzheimer,9606
+EGFR,lung cancer,9606
+KRAS,pancreatic cancer,9606
+BRAF,melanoma,9606
+PTEN,hamartoma,9606

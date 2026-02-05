@@ -1,0 +1,105 @@
+import type { Dossier } from "./types";
+
+export const sampleDossier: Dossier = {
+  query: "TP53",
+  resolved_id: "P04637",
+  overview: {
+    protein_name: "Cellular tumor antigen p53",
+    gene: "TP53",
+    organism: "Homo sapiens",
+    length: 393,
+    isoforms: ["Isoform 1", "Isoform 2"],
+    domains: [
+      { name: "Transactivation domain", start: 1, end: 61, source: "UniProt" },
+      { name: "DNA-binding domain", start: 102, end: 292, source: "UniProt" },
+    ],
+    subcellular_locations: ["Nucleus", "Cytoplasm"],
+    function_summary:
+      "Acts as a sequence-specific DNA-binding transcription factor that regulates genes involved in cell cycle arrest, apoptosis, and DNA repair.",
+    caveats: ["Summary is a demo placeholder. Replace with curated text once adapters are wired."],
+    key_annotations: ["Entry status: Reviewed (Swiss-Prot)", "Protein existence: Evidence at protein level"],
+    cross_refs: [
+      { db: "UniProt", id: "P04637", url: "https://www.uniprot.org/uniprotkb/P04637" },
+      { db: "Ensembl", id: "ENSG00000141510" },
+      { db: "RefSeq", id: "NM_000546" },
+    ],
+  },
+  variants: [
+    {
+      variant_id: "VAR_001",
+      hgvs: "c.215C>G (p.Pro72Arg)",
+      classification: "VUS",
+      condition: "Li-Fraumeni syndrome",
+      review_status: "criteria provided, single submitter",
+      conflicts: ["conflicting interpretations"],
+      pmids: ["12345678"],
+    },
+    {
+      variant_id: "VAR_002",
+      hgvs: "c.743G>A (p.Arg248Gln)",
+      classification: "Pathogenic",
+      condition: "Li-Fraumeni syndrome",
+      review_status: "reviewed by expert panel",
+      conflicts: [],
+      pmids: ["23456789", "34567890"],
+    },
+  ],
+  structure: {
+    pdb_ids: ["1TUP", "2AC0"],
+    alphafold_id: "AF-P04637-F1",
+    predicted_domains: [
+      { name: "DNA-binding domain", start: 102, end: 292, source: "AlphaFold" },
+    ],
+    binding_sites: ["DNA-binding interface"],
+    binding_sites_detail: [{ label: "DNA-binding interface", start: 245, end: 260 }],
+    druggability_flags: ["Transcription factor", "Protein-protein interaction surface"],
+  },
+  pathways: [
+    { name: "DNA Damage Response", source: "Reactome", role: "transcriptional regulator" },
+    { name: "Apoptosis", source: "Reactome", role: "upstream regulator" },
+  ],
+  interactions: {
+    nodes: [
+      { id: "TP53", label: "TP53", type: "protein" },
+      { id: "MDM2", label: "MDM2", type: "protein" },
+      { id: "CDKN1A", label: "CDKN1A", type: "protein" },
+    ],
+    edges: [
+      { source: "TP53", target: "MDM2", evidence: "curated", score: 0.91 },
+      { source: "TP53", target: "CDKN1A", evidence: "curated", score: 0.88 },
+    ],
+  },
+  literature: [
+    {
+      pmid: "12345678",
+      title: "TP53 mutations in cancer",
+      year: 2019,
+      journal: "Cancer Res",
+      topic_label: "cancer / mutation / biomarker",
+      ml_score: 0.78,
+      disease_score: 0.66,
+      l2r_score: 0.71,
+      tags: ["mutation", "cancer"],
+    },
+    {
+      pmid: "23456789",
+      title: "Targeting p53 pathways",
+      year: 2021,
+      journal: "Nat Rev Drug Discov",
+      topic_label: "pathway / inhibitor / signaling",
+      ml_score: 0.62,
+      disease_score: 0.28,
+      l2r_score: 0.54,
+      tags: ["inhibitor", "pathway"],
+    },
+  ],
+  study_suggestions: ["cancer", "mutation", "biomarker"],
+  provenance: {
+    overview: "UniProt (sample)",
+    variants: "ClinVar (sample)",
+    structure: "PDB/AlphaFold (sample)",
+    pathways: "Reactome (sample)",
+    interactions: "STRING (sample)",
+    literature: "PubMed (sample)",
+  },
+};
