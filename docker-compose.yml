@@ -15,6 +15,7 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://protein:protein@db:5432/protein_hub
       SECRET_KEY: change-me
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
     volumes:
       - ./backend:/app
     ports:
