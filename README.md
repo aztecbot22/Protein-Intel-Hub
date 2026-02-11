@@ -2,6 +2,11 @@
 
 Protein Intelligence Hub is a full‑stack web app that assembles a single, structured protein dossier from multiple live biomedical databases. It merges canonical protein context, clinical variants, pathways/interactions, ML‑ranked literature, and an interactive AlphaFold 3D structure viewer into one evidence‑first workspace.
 
+## Live Demo
+Web app: `https://main.d3z2b962y6301.amplifyapp.com`
+
+Note: The backend currently uses a Cloudflare quick tunnel. If the tunnel URL changes, the demo may be temporarily unavailable until it is updated.
+
 ## Features (Core)
 - Live multi‑database dossier: UniProt, ClinVar, PubMed, Reactome, STRING, PDB, AlphaFold.
 - ML‑ranked literature (TF‑IDF + learning‑to‑rank signals) with topic labels.
@@ -110,6 +115,7 @@ Each adapter lives in `backend/app/services/adapters/`.
 
 ## Notes
 This scaffold focuses on clear data contracts, adapter boundaries, and a strong UX foundation. You can extend the adapters for deeper evidence and scoring.
+
 
 
 
